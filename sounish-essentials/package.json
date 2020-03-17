@@ -8,6 +8,10 @@
     },
     "publisher": "sounish",
     "icon": "computer.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sounishnath003/vscode-essentials"
+    },
     "categories": [
         "Extension Packs"
     ],
