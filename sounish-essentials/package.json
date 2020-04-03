@@ -2,7 +2,7 @@
     "name": "sounish-essentials",
     "displayName": "Sounish-Essentials",
     "description": "This ext. pack is build for my purpose or even any body who wants to have a jumpstart in VS code developement <3",
-    "version": "0.0.1",
+    "version": "1.0.2",
     "engines": {
         "vscode": "^1.43.0"
     },
@@ -15,15 +15,15 @@
     "categories": [
         "Extension Packs"
     ],
-    "extensionPack": [ 
-        "CoenraadS.bracket-pair-colorizer", 
-        "ssmi.after-dark", 
-        "mikael.angular-beastcode", 
-        "1tontech.angular-material", 
-        "hardikpthv.angularmaterial", 
-        "johnpapa.angular2", 
-        "equinusocio.vsc-community-material-theme", 
-        "donjayamanne.jquerysnippets", 
+    "extensionPack": [
+        "CoenraadS.bracket-pair-colorizer",
+        "ssmi.after-dark",
+        "mikael.angular-beastcode",
+        "1tontech.angular-material",
+        "hardikpthv.angularmaterial",
+        "johnpapa.angular2",
+        "equinusocio.vsc-community-material-theme",
+        "donjayamanne.jquerysnippets",
         "pkief.material-icon-theme",
         "equinusocio.vsc-material-theme",
         "equinusocio.vsc-material-theme-icons",
@@ -56,5 +56,13 @@
         "bradlc.vscode-tailwindcss",
         "octref.vetur",
         "visualstudioexptteam.vscodeintellicode"
-    ]
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "cpp",
+                "path": "./snippets/cpp/snippets.json"
+            }
+        ]
+    }
 }

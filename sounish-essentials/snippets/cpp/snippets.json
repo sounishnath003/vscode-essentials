@@ -1,0 +1,45 @@
+{
+  "kickstart c++": {
+    "prefix": "initcpp",
+    "body": [
+      "#include<bits/stdc++.h>",
+      "using namespace std ;",
+      "#define deb(x) {cout << #x << \" \" << x << endl ;}",
+      "",
+      "int main(int argc, char const *argv[]){",
+      "    ios::sync_with_stdio(0) ;",
+      "",
+      "    ${1:example}",
+      "    return 0;",
+      "}",
+      ""
+    ],
+    "description": "kickstart c++"
+  },
+
+  "competitive programming snippet": {
+    "prefix": "ccp",
+    "body": [
+      "#include<bits/stdc++.h>",
+      "using namespace std ;",
+      "#define deb(x) {cout << #x << \" \" << x << endl ;}",
+      "const int N = 1e+6 ;",
+      "",
+      "",
+      "int main(int argc, char const *argv[]){",
+      "    ios::sync_with_stdio(0) ;",
+      "",
+      "    #ifndef ONLINE_JUDGE",
+      "        freopen(\"inp.txt\", \"r\", stdin) ;",
+      "        freopen(\"out.txt\", \"w\", stdout) ;",
+      "    #endif",
+      "",
+      "    ${1:write code}",
+      "    ",
+      "    return 0;",
+      "}",
+      ""
+    ],
+    "description": "competitive programming snippet"
+  }
+}

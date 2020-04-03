@@ -5,6 +5,14 @@
 * This folder contains all of the files necessary for your extension pack.
 * `package.json` - this is the manifest file that defines the list of extensions of the extension pack.
 
+ ## New Extension - snippets C++ Devs
+  * `Competetive programming packs`
+  * Clean and `minimal setup`
+  * clonning new horizons
+  * ` #ifndef and #endif pre-processors `
+
+
+
 ## Get up and running straight away
 
 * Press `F5` to open a new window with your extension loaded.
