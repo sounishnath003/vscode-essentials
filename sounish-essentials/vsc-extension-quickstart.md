@@ -5,6 +5,11 @@
 * This folder contains all of the files necessary for your extension pack.
 * `package.json` - this is the manifest file that defines the list of extensions of the extension pack.
 
+ ## Version 1.0.3 - C++ vector + Matrices
+  * `coding feautes c++`
+  * `added vector print as 'prtvect' command `
+  * `added matrix print as 'prtmat' command `
+ 
  ## New Extension - snippets C++ Devs
   * `Competetive programming packs`
   * Clean and `minimal setup`

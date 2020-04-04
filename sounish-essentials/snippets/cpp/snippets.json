@@ -1,20 +1,21 @@
 {
-  "kickstart c++": {
+  "kickstart c++ coding": {
     "prefix": "initcpp",
     "body": [
       "#include<bits/stdc++.h>",
+      "#define fo(i, n) for(int i = 0; i < n; i++)",
       "using namespace std ;",
       "#define deb(x) {cout << #x << \" \" << x << endl ;}",
       "",
       "int main(int argc, char const *argv[]){",
       "    ios::sync_with_stdio(0) ;",
       "",
-      "    ${1:example}",
+      "   ${1:example ;}",
       "    return 0;",
       "}",
       ""
     ],
-    "description": "kickstart c++"
+    "description": "kickstart c++ coding"
   },
 
   "competitive programming snippet": {
@@ -23,6 +24,7 @@
       "#include<bits/stdc++.h>",
       "using namespace std ;",
       "#define deb(x) {cout << #x << \" \" << x << endl ;}",
+      "#define fo(i, n) for(int i = 0; i < n ; i++)",
       "const int N = 1e+6 ;",
       "",
       "",
@@ -34,12 +36,30 @@
       "        freopen(\"out.txt\", \"w\", stdout) ;",
       "    #endif",
       "",
-      "    ${1:write code}",
+      "    write code",
       "    ",
       "    return 0;",
       "}",
       ""
     ],
     "description": "competitive programming snippet"
+  },
+
+  "print vector": {
+    "prefix": "prtvect",
+    "body": ["for(auto &&x : v ) {", "   cout << ${1:x} << \" \" ;", "}"],
+    "description": "print vector"
+  },
+
+  "print matrix": {
+    "prefix": "prtmat",
+    "body": [
+      "for(auto &&i : mat) {",
+      "  for(auto &&j : i) {",
+      "      cout << j << \" \" ;",
+      "  }cout << end; ",
+      "}"
+    ],
+    "description": "print matrix"
   }
 }

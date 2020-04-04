@@ -2,7 +2,7 @@
     "name": "sounish-essentials",
     "displayName": "Sounish-Essentials",
     "description": "This ext. pack is build for my purpose or even any body who wants to have a jumpstart in VS code developement <3",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "engines": {
         "vscode": "^1.43.0"
     },
