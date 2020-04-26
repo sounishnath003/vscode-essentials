@@ -1,65 +1,111 @@
 {
-  "kickstart c++ coding": {
+  "kickstart your C++ competetition": {
     "prefix": "initcpp",
     "body": [
       "#include<bits/stdc++.h>",
-      "#define fo(i, n) for(int i = 0; i < n; i++)",
       "using namespace std ;",
+      "#define fo(i, n) for(int i = 0; i < n; i++)",
+      "#define foo(i, k, n) for(int i = k; i < n; i++)",
       "#define deb(x) {cout << #x << \" \" << x << endl ;}",
+      "#define IOS ios::sync_with_stdio(false), cin.tie(0) ;",
+      "#define MOD = 1e9+7 ;",
+      "const int N = 1e6+7 ;",
       "",
       "int main(int argc, char const *argv[]){",
-      "    ios::sync_with_stdio(0) ;",
+      "    IOS ;",
+      "   ",
+      "    ${1:example}",
       "",
-      "   ${1:example ;}",
       "    return 0;",
       "}",
       ""
     ],
-    "description": "kickstart c++ coding"
+    "description": "kickstart your C++ competetition"
   },
 
-  "competitive programming snippet": {
+  "competetive setup for c++": {
     "prefix": "ccp",
     "body": [
       "#include<bits/stdc++.h>",
       "using namespace std ;",
+      "#define fo(i, n) for(int i = 0; i < n; i++)",
+      "#define foo(i, k, n) for(int i = k; i < n; i++)",
       "#define deb(x) {cout << #x << \" \" << x << endl ;}",
-      "#define fo(i, n) for(int i = 0; i < n ; i++)",
-      "const int N = 1e+6 ;",
+      "#define IOS ios::sync_with_stdio(false), cin.tie(0) ;",
+      "#define MOD = 1e9+7 ;",
+      "const int N = 1e6+7 ;",
       "",
       "",
       "int main(int argc, char const *argv[]){",
-      "    ios::sync_with_stdio(0) ;",
+      "    IOS ;",
       "",
       "    #ifndef ONLINE_JUDGE",
-      "        freopen(\"inp.txt\", \"r\", stdin) ;",
-      "        freopen(\"out.txt\", \"w\", stdout) ;",
+      "        freopen(\"input.txt\", \"r\", stdin) ;",
+      "        freopen(\"output.txt\", \"w\", stdout) ;",
       "    #endif",
       "",
-      "    write code",
+      "    ${1:write code} ",
       "    ",
       "    return 0;",
       "}",
       ""
     ],
-    "description": "competitive programming snippet"
+    "description": "competetive setup for c++"
   },
 
-  "print vector": {
+  "print vector with cout": {
     "prefix": "prtvect",
-    "body": ["for(auto &&x : v ) {", "   cout << ${1:x} << \" \" ;", "}"],
-    "description": "print vector"
+    "body": [
+      "void operator<<(ostream &os, vector<${1:example}> &v){",
+      "    for (const ${1:example}x : v) {",
+      "        cout << x << \" \" ;",
+      "    }",
+      "    cout << endl ;",
+      "}",
+      ""
+    ],
+    "description": "print vector with cout"
   },
 
-  "print matrix": {
+  "print matrix with cout": {
     "prefix": "prtmat",
     "body": [
-      "for(auto &&i : mat) {",
-      "  for(auto &&j : i) {",
-      "      cout << j << \" \" ;",
-      "  }cout << end; ",
+      "void operator<<(ostream &os, vector<vector<${1:example}>> &mat) {",
+      "    for(const ${1:example} i : mat) {",
+      "        for (const ${1:example} j : i ){",
+      "            cout << j << \" \" ;",
+      "        }",
+      "        cout << endl ;",
+      "    }",
       "}"
     ],
-    "description": "print matrix"
+    "description": "print matrix with cout"
+  },
+
+  "travelling salesman code": {
+    "prefix": "tsp",
+    "body": [
+      "int tsp(vector<vector<int>> &dist, int mask, int pos) {",
+      "    int n = dist[0].size() ;",
+      "    int VISITED_ALL = (1 << n) - 1;",
+      "    int ans = INT_MAX;",
+      "",
+      "    if (mask == VISITED_ALL) {",
+      "        return dist[pos][0];",
+      "    }",
+      "    for (int city = 0; city < n; city++) {",
+      "        if ((mask & (1 << city)) == 0) {",
+      "            int newAns = dist[pos][city] + tsp(dist, mask | (1 << city), city);",
+      "            ans = min(ans, newAns);",
+      "        }",
+      "    }",
+      "    return ans;",
+      "}"
+    ],
+    "description": "travelling salesman code"
   }
+
+  
+
+
 }

@@ -4,6 +4,12 @@
 
 * This folder contains all of the files necessary for your extension pack.
 * `package.json` - this is the manifest file that defines the list of extensions of the extension pack.
+  
+ ## [version 1.0.4] - C++ (tsp + cout overloaded for 1d & 2d vectors)
+  * `Reorganized snippets and improved code`
+  * `travelling saleman` & `operator overloading` added for vector & 2d vectors
+  * added `preprocessors` and IOS optimized by `#define`
+
 
  ## Version 1.0.3 - C++ vector + Matrices
   * `coding feautes c++`
